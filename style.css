@@ -1,8 +1,150 @@
-body {
-  background-color: lightblue;
+/* GLOBAL VARIABLES ***********************************/
+:root {
+  --primary-color: #70A6B1;
+  --secondary-color:#B17085;
+  --tertiary-color:#B19C70;
+
+  --primary-bg-color: #444444;
+
+
 }
 
-h1 {
-  color: navy;
-  margin-left: 20px;
+body {
+  background-color: var(--primary-bg-color);
+
+
 }
+
+/* NAVBAR ***********************************/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-bg-color);
+}
+
+li, a, button {
+  font-family: "Unica One";
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10%;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  font-weight: bold;
+  color: var(--secondary-color);
+
+}
+
+button {
+  padding: 9px 25px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: var(--primary-bg-color);
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+  font-weight: bold;
+}
+
+
+/* MAIN PAGE ***********************************/
+h1 {
+  color: black;
+  font-family: Unica One;
+}
+.main__body{
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px 10%;
+  
+  
+}
+
+
+
+
+
+
+
+
+
+/* FONTS ***********************************/
+.bitcount-grid-double {
+  font-family: "Bitcount Grid Double", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+}
+
+.syne-mono-regular {
+  font-family: "Syne Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bungee-hairline-regular {
+  font-family: "Bungee Hairline", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rubik-glitch-regular {
+  font-family: "Rubik Glitch", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sixtyfour {
+  font-family: "Sixtyfour", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "BLED" 0,
+    "SCAN" 0;
+}
+
+.rubik-pixels-regular {
+  font-family: "Rubik Pixels", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.unica-one-regular {
+  font-family: "Unica One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
